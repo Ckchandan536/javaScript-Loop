@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<!-- Constants are block-scoped, much like variables declared using the let keyword.
+     The value of a constant can't be changed through reassignment 
+     (i.e. by using the assignment operator), and it can't be redeclared 
+     (i.e. through a variable declaration). However, 
+     if a constant is an object or array its properties or items can be updated or removed. -->
+
+     <!-- The const keyword was introduced in ES6 (2015).
+
+Variables defined with const cannot be Redeclared.
+
+Variables defined with const cannot be Reassigned.
+
+Variables defined with const have Block Scope. -->
+
+
+
+     <!-- The simple assignment operator (=) is used to assign a value to a variable. -->
+
+     <!-- Declarations
+JavaScript has three kinds of variable declarations.
+
+var
+Declares a variable, optionally initializing it to a value.
+
+let
+Declares a block-scoped, local variable, optionally initializing it to a value.
+
+const
+Declares a block-scoped, read-only named constant. -->
+<body>
+    <h2>JavaScript For Loop</h2>
+    <p id="demo"></p>
+    <script>
+        const chocolates = ["Cadbury", "M&M", "Snickers", "Ferrero rocher"];
+        let i = 0;
+        let length = chocolates.length;
+        let text = "";
+        for (; i < length; ) {
+            text += chocolates[i] + "<br>";
+            i++;
+            // ++	Increment [Arithmetic Operators]
+            // The addition assignment operator (+=) adds a value to a variable.
+
+            // The += assignment operator can also be used to add (concatenate) strings:
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    <!-- What does += mean in JavaScript?
+The JavaScript += operator takes the values from the right of the operator and adds it 
+to the variable on the left. This is a very concise method to add two values and assign the result 
+to a variable hence it is called the addition assignment operator.
+
+This operator is not only used to add numerical values but can also be used to concatenate strings together. 
+Essentially it replaces the variable = a + b syntax with a += b. -->
+</body>
+</html>

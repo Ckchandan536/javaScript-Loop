@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number patterns in nested loop</title>
+</head>
+<h2>Number of rows = 5 and Number of cols = vary from 1 to 5</h2>
+
+<body>
+    <!-- for pattern making we need two variable which we used i and j -->
+    <!-- then we need take loop that controls number of loop -->
+    <script language="Javascript">
+        var i, j;
+        for (i = 1; i <= 5; i++)
+        // outer loop
+        // this loop controls row, we have 5 rows that why it will iterate 5 times.
+
+        {
+            for (j = 1; j <= i; j++)
+            //  inner loop
+            // j<=i i ki value pahle bar mein 1 rhegi ,thats why this loop
+            // will converted in triangle pattern 
+            {
+                document.write("*&nbsp;&nbsp;&nbsp;");
+                //  to print star [*] pattern we write  above code.
+            }
+            document.write("<br>");
+            // to move cursore from one line to another line, we use above code.
+
+        }
+        // when after 1st iteration i incremented to i++ = 2
+        // then this [ for (j=1;j<=2;j++)
+        //             {
+        //                document.write("*&nbsp;&nbsp;");
+        //             }
+        //               t                                  ]
+        //            this will run 2 times and gives us 2 star [**]
+        // will run for the 2nd loop.
+        // and so till 5 star printing
+        // when i value = 6 then only our program wil terminat.
+    </script>
+    <br>
+    <br>
+    <br>
+    <!--1
+        2 2
+        3 3 3
+        4 4 4 4
+        5 5 5 5 5 -->
+    <script language="Javascript">
+        var i, j;
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(i + "&nbsp;&nbsp;&nbsp;");
+
+            }
+            document.write("<br>");
+
+        }
+// here we repeated the Fixed value of i 5 times
+    </script>
+    <br>
+    <br>
+    <br>
+
+    <!-- 1
+         1 2
+         1 2 3
+         1 2 3 4
+         1 2 3 4 5
+                  -->
+    <script language="Javascript">
+        var i, j;
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(j + "&nbsp;&nbsp;&nbsp;");
+
+            }
+            document.write("<br>");
+
+        }
+// in this loop j value will print
+// 1st time 1
+// 2nd time 1 2
+// 3rd time 1 2 3
+// 4th time 1 2 3 4
+// 5th time 1 2 3 4 5
+    </script>
+<br>
+<br>
+<br>
+<br>
+
+<!--1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5 -->
+                
+
+    <script language="Javascript">
+        function Pattern (param)
+        {
+            for (var i = 1; i <= param; i++) 
+            {
+                var text = "";
+                for (var j = 1; j <= i; j++) 
+                {
+                     text += j + " "; 
+                }
+                document.write(text);
+                document.write('<br>');
+            }
+        }
+        Pattern(5);
+    </script>
+
+
+</body>
+
+</html>

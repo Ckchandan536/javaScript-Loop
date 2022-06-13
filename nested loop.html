@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop </title>
+</head>
+<h2>Nasted Loop ,[ will open in console ] Loop 2 inside Loop 1</h2>
+<p>outer loop is i=0,1,2,3,4,5,6 ad inner loop is [j=0 to 4]</p>
+
+<body>
+    <!-- 
+    1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4
+    1 2 3 4 5
+     -->
+    <script type="text/javascript">
+        for (var i = 0; i < 10; i++) {
+            for (var j = 0; j < 5; j++) {
+                console.log("i = " + i + "  j = " + j);
+            }
+            console.log("This is Inside i = " + i);
+        }
+
+    </script>
+    <!-- 
+    1
+    22
+    333
+    4444
+    55555
+ -->
+    <script type="text/javascript">
+        for (var i = 1; i < 6; i++) {
+            var line = "";
+            for (var j = 1; j <= i; j++) {
+                line += i;
+            }
+            console.log(line);
+        }
+    </script>
+
+    <!-- 
+    1 x 1 = 1
+    1 x 2 = 2
+    1 x 3 = 3
+    . . . . .
+    . . . . .
+    10 x 10 = 100
+ -->
+    <script type="text/javascript">
+        for (var i = 1; i <= 10; i++) 
+        {
+            console.log("Table of " + i);
+            // outer loop which is not changing [i]
+            // inner loop which is changing [j]
+            for (var j = 1; j <= 10; j++) 
+            {
+                var line = i + " x " + j + " = " + (i * j);
+                // "x" [constant]   "=" [changing a lot]
+                console.log(line);
+            }
+                // console.log(line)should happen on every line bcoz every time we are printing
+                // every line  we need to print to proceed to new line 
+            
+            // to seprate counting table [make extra space between them ]
+            // we use console.log(); it will not going to work 
+            // until given with empty space  console.log ("")
+            console.log("");
+            console.log("");
+        }
+    </script>
+</body>
+
+</html>

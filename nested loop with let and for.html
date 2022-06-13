@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Statements</h1>
+<h2>The for Loop</h2>
+
+<p>A nested loop (a loop inside a loop):</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+for (let i = 0; i < 11; i++) {
+  text += i + "<br>";   
+  for (let j = 1; j < 4; j++) {
+    text += j + "<br>";   
+  }
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
